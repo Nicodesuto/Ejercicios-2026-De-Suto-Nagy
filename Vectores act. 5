@@ -2,7 +2,13 @@
 int vector[10],x;
 int x, j;
 int aux;
-
+int prom;
+int sum;
+void promedio(float sum)
+{
+    prom = sum/10;
+    printf("El promedio de los valores del vector es: %d\n", prom);
+}
 int main()
 {
     printf("Ingrese los valores del vector\n");
@@ -10,6 +16,7 @@ int main()
     {
         printf("ingrese el valor de la casilla %d\n", x);
         scanf("%d", &vector[x]);
+        sum=sum + vector[x];
     }
     for(x=0; x<10; x++)
     {
@@ -27,5 +34,6 @@ int main()
     {
         printf("%d\n", vector[x]);
     }
+    promedio(sum);
     return 0;
 }
