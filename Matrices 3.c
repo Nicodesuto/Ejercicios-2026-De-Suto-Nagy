@@ -1,11 +1,17 @@
 #include <stdio.h>
-
+int matriz[4][4];
 int main() {
-    int matriz[4][4];
+    matriz[0][0] = 0;
+    matriz[0][1] = 0;
+    matriz[1][0] = 0;
+    matriz[1][1] = 1;
+    matriz[2][0] = 1;
+    matriz[2][1] = 0;
+    matriz[3][0] = 1;
+    matriz[3][1] = 1;
+    
     for (int i = 0; i < 4; i++) {
-        matriz[i][0] = (i / 2);
-        matriz[i][1] = (i % 2);
-        matriz[i][2] = matriz[i][0] %% matriz[i][1];
+        matriz[i][2] = matriz[i][0] && matriz[i][1];
         matriz[i][3] = matriz[i][0] || matriz[i][1];
 
     }
