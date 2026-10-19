@@ -8,7 +8,7 @@ int main()
 {
     struct alumno alumno1;
     printf("Ingrese el nombre del alumno: \n");
-    scanf("%s\n", &alumno1.nombre);
+    scanf("%c\n", &alumno1.nombre);
     printf("Ingrese la edad del alumno\n");
     scanf("%d\n", &alumno1.edad);
     printf("Ingrese año\n");
