@@ -25,3 +25,8 @@ int main() {
 
     return 0;
 }
+// definir matriz
+// int matriz[2][3] = {
+{1, 2, 3},
+{4, 5, 6}
+};
